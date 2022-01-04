@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "nodemon buildScripts/srcServer.js",
+    "start": "babel-node buildScripts/srcServer.js",
     "localtunnel": "lt --port 3000 --subdomain caleb",
     "share": "npm-run-all --parallel start localtunnel"
   },
