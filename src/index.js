@@ -1,6 +1,8 @@
 import { deleteUser, getUsers } from './api/userApi'
 import './index.css'
 
+// todo: add POST method to add user, PATCH method to edit user
+
 getUsers().then(result => {
   let usersBody = ""
 
