@@ -18,7 +18,10 @@ export default {
     new MiniCssExtractPlugin({
       filename: "[name].[chunkhash].css"
     }),
-    new HtmlWebpackPlugin({ template: "./src/index.html" }),
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+      trackJSToken: "52ad96627cf2403b869a8ed138789edb",
+    }),
   ],
   module: {
     rules: [
