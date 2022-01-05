@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://starter-kit/./src/index.css"],"names":[],"mappings":"AAAA;EACE,uBAAuB;AACzB;;AAEA;EACE,YAAY;AACd","file":"main.e4d12ea167b53fada0b0.css","sourcesContent":["body {\n  font-family: Sans-Serif;\n}\n\ntable th {\n  padding: 5px;\n}\n"],"sourceRoot":""}
