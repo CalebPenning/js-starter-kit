@@ -1,4 +1,4 @@
-import { getUsers } from './api/userApi'
+import { deleteUser, getUsers } from './api/userApi'
 import './index.css'
 
 getUsers().then(result => {
@@ -15,4 +15,16 @@ getUsers().then(result => {
   })
 
   document.getElementById('users').innerHTML = usersBody
+
+  const deleteLinks = document.getElementsByClassName("deleteUser")
+
+  Array.from(deleteLinks, (link) => {
+    link.addEventListener('click', (e) => {
+      const element = e.target
+      e.preventDefault()
+      deleteUser(element.attributes['data-id'].value)
+      const row = element.parentNode.parentNode
+      row.parentNode.removeChild(row)
+    })
+  })
 })
